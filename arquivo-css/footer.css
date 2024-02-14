@@ -1,0 +1,12 @@
+.footer-bg {
+   background-color: #000000;
+   color: #ffffff;
+}
+
+.footer {
+   max-width: 1300px;
+   margin-left: auto;
+   margin-right: auto;
+   box-sizing: border-box;
+   padding: 60px 30px;
+}
