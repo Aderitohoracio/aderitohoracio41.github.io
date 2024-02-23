@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Mercado online</title>
-      <link rel="stylesheet" href="./style.css" />
-   </head>
-   <body>
-      <div class="topo">
-         <p>MERCADO ONLINE. Direitos reservado</p>
-      </div>
-      <header class="header-bg">
-         <div class="header">
-            <div class="menu-oculto">
-               <img
-                  class="img"
-                  src="./img/menu.svg"
-                  alt="logotipo"
-                  width="30"
-                  height="40"
-               />
-            </div>
-            <div class="logo">
-               <img src="./img/logo.svg" alt="logotipo" width="240" />
-            </div>
-            <form class="campo_de_busca" action="/search" method="get">
-               <input type="text" name="q" placeholder="Pesquise o Produto" />
-               <button type="submit">
-                  <span class="ico pesquisa"
-                     ><img src="./img/pesquisa.svg" alt=""
-                  /></span>
-               </button>
-            </form>
-            <ul class="ferramentas">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado online</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <p>MERCADO ONLINE. Direitos reservado</p>
+    </div>
+    <header class="header-bg">
+      <div class="header">
+        <div class="menu-oculto">
+          <img  src="./img/menu.svg" alt="logotipo" width="30" height="40"/>
+        </div>
+        <div class="logo">
+          <img src="./img/logo.svg" alt="logotipo" width="240" />
+        </div>
+        <form class="campo_de_busca" action="/search">
+          <input class="input" type="text" name="q" placeholder="Qual produto está procurando?" autofocus/>
+          <button class="botao_de_submit" type="submit">
+            <span class="ico pesquisa">
+               <img src="./img/pesquisa.svg" alt="" width="30" height="30"/>
+            </span>
+          </button>
+        </form>
+        <ul class="ferramentas">
+            <div class="ferramentas_items first ">
                <li class="ico">
-                  <img class="img icon" src="./img/criar conta.svg" alt="" />
+                  <img  src="./img/criar conta.svg" alt=""/>
                </li>
+
                <li class="sub-ferramentas">
                   <span class="anotaçoes">Entrar / Cadastrar</span>
                   <p>Minha conta</p>
                </li>
+            </div>
+
+            <div class="ferramentas_items">
                <li class="ico">
-                  <img class="img icon" src="./img/localizacao.svg" alt="" />
+                  <img  src="./img/localizacao.svg" alt=""/>
                </li>
+
                <li class="sub-ferramentas">
                   <span class="anotaçoes">Onde está?</span>
                   <p>Rastrear o pedido</p>
                </li>
+            </div>
+
+            <div class="ferramentas_items last">
                <li class="ico">
-                  <img class="img icon" src="./img/CARRINHO-bag.svg" alt="" />
+                  <img  src="./img/CARRINHO-bag.svg" alt=""/>
                </li>
+
                <li class="sub-ferramentas">
                   <span class="anotaçoes">Adicionar</span>
                   <p>Carinho</p>
                </li>
-            </ul>
-            <ul class="menu">
-               <li>Pagina inicial</li>
-               <li class="seta-">
-                  <p>Todas categorias</p>
-                  <p class="ico seta">
-                     <img
-                        class="img"
-                        src="./img/seta.svg"
-                        alt=""
-                        width="40"
-                        height="40"
-                     />
-                  </p>
-               </li>
-               <li>Contacto</li>
-            </ul>
-         </div>
-      </header>
+            </div>
+        </ul>
 
-      <div class="banner-bg">
-         <h1>Local para Banner</h1>
+        <ul class="menu">
+          <li>Pagina inicial</li>
+          <li class="seta-">
+            <p>Todas categorias</p>
+            <span class="ico seta">
+              <img  src="./img/seta.svg" alt="" width="40" height="40"/>
+            </span>
+          </li>
+          <li>Contacto</li>
+        </ul>
       </div>
+    </header>
 
-      <footer class="footer-bg">
-         <div class="footer"></div>
-      </footer>
-   </body>
+    <div class="banner-bg">
+      <h1>Local para Banner</h1>
+    </div>
+
+    <footer class="footer-bg">
+      <div class="footer"></div>
+    </footer>
+  </body>
 </html>

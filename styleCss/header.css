@@ -1,0 +1,286 @@
+.top {
+   background: var(--gradient1);
+   text-align: center;
+   padding: 8px 0px;
+   color: var(--white);
+}
+
+.header-bg {
+   padding: 32px 16px;
+   background-color: var(--black);
+   color: var(--white);
+   box-shadow: 0px 4px var(--vermelho1);
+}
+
+.header {
+   max-width: 1300px;
+   box-sizing: border-box;
+   display: grid;
+   grid-template-columns: 1fr 2fr 2fr;
+   gap: 16px;
+   margin-left: auto;
+   margin-right: auto;
+   justify-items: center;
+   align-content: center;
+}
+
+.menu-oculto {
+   display: none;
+}
+
+.logo {
+   display: block;
+   max-width: 15.1828125rem;
+   height: 54px;
+}
+
+.campo_de_busca {
+   display: grid;
+   grid-template-columns: auto;
+   align-items: center;
+}
+
+.input {
+   display: block;
+   width: 360px;
+   height: 40px;
+   border-radius: 8px;
+   box-shadow: 2px 0px 0px var(--white);
+   border: none;
+   font-size: 18px;
+   padding: 0px 70px 0px 10px;
+}
+
+.botao_de_submit {
+   display: block;
+   width: 3.75rem;
+   height: 2.125rem;
+   border-radius: 12px;
+   border: none;
+   background-color: var(--laranja1);
+   color: var(--white);
+   font-family: inherit;
+   font-size: 0.9rem;
+   position: absolute;
+   justify-self: end;
+   margin-right: 4px;
+   cursor: pointer;
+}
+
+.pesquisa {
+   display: grid;
+   width: 28px;
+   height: 80%;
+   margin: auto;
+
+}
+
+.pesquisa img {
+   width: 28px;
+}
+
+.ferramentas {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 5px;
+}
+
+.ferramentas img {
+   width: 30px;
+   height: 54px;
+}
+
+.ferramentas_items {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   align-items: center;
+   gap: 4px;
+   width: 176px;
+   cursor: pointer;
+}
+
+.first {
+   width: 156px;
+}
+
+.last {
+   width: 104px;
+}
+
+.ferramentas_items:hover {
+   font-weight: bold;
+   background-color: #202020;
+   border-radius: 8px;
+   transition: all 0.2s ease-in-out;
+}
+.anotaçoes {
+   font-size: 0.85rem;
+   color: var(--vermelho1);
+}
+
+.menu {
+   grid-column: 1/-1;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   gap: 28px;
+   margin-top: 8px;
+   text-align: center;
+}
+
+.menu li:nth-child(2) {
+   padding-right: 24px;
+}
+
+.menu li {
+   width: 140px;
+}
+
+.menu li:hover {
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.seta- {
+   position: relative;
+}
+
+.seta {
+   position: absolute;
+   top: -10px;
+   right: -4px;
+}
+
+.seta img {
+   width: 28px;
+}
+
+@media (max-width: 1200px) {
+   .header {
+      grid-template-columns: auto auto auto;
+      gap: 4px;
+   }
+
+   .input {
+      width: 40vw;
+      margin: 0px 20px;
+   }
+
+   .botao_de_submit {
+      margin-right: 24px;
+   }
+
+   .ferramentas {
+      gap: 14px;
+      justify-self: end;
+   }
+
+   .ferramentas img {
+      height: 54px;
+   }
+
+   .ferramentas_items {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+   }
+
+   .ferramentas_items:hover {
+      background-color: var(--black);
+   }
+
+   .ico img:hover {
+      width: 40px;
+      height: 54px;
+      transition:all 0.3s ease-in-out;
+   }
+
+   .sub-ferramentas {
+      display: none;
+   }
+}
+
+@media (max-width: 1000px) {
+   .header {
+      grid-template-columns: auto auto auto auto;
+      gap: 2px;
+   }
+
+   .menu-oculto {
+      display: block;
+   }
+
+   .input {
+      width: 30vw;
+      margin: 0px 20px;
+   }
+   .menu {
+      display: none;
+   }
+}
+
+@media (max-width: 860px) {
+   .header {
+      grid-template-columns: auto auto 1fr;
+      gap: 10px;
+   }
+
+   .menu-oculto {
+      height: 32px;
+   }
+
+   .logo {
+      justify-self: initial;
+      height: 32px;
+   }
+   .logo img {
+      width: 150px;
+      height: 30px;
+   }
+
+   .campo_de_busca {
+      grid-column: 1;
+      grid-column: 1/-1;
+   }
+
+   .input {
+      width: 76vw;
+   }
+
+   .ferramentas {
+      grid-column: 3;
+      grid-row: 1;
+      gap: 12px;
+      justify-self: end;
+      height: 32px;
+      width: 110px;
+   }
+   .ferramentas img {
+      height: 30px;
+   }
+   .ferramentas_items:hover {
+      background-color: rgba(255, 255, 255, 0);
+   }
+   .ico img:hover {
+      width: 30px;
+      height: 30px;
+      background-color: rgba(255, 255, 255, 0);
+   }
+
+}
+
+@media (max-width: 500px) {
+   .header-bg {
+      padding: 18px 16px;
+   }
+
+   .input {
+      width: 76vw;
+   }
+}
+
+@media (max-width: 400px) {
+   .input {
+      width: 70vw;
+      margin: 0px 20px;
+   }
+}
